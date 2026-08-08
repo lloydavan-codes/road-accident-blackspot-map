@@ -1,0 +1,227 @@
+body {
+  font-family: Inter, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* header at the top of every page */
+header {
+  background-color: #1e3d2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family: Playfair Display, 'Times New Roman', serif;
+}
+
+header .site-title {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+header .site-tagline {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* navigation menu */
+nav {
+  background-color: #12271e;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #8a2e2e;
+}
+
+nav ul li a.active {
+  background-color: #d99a2b;
+  color: black;
+}
+
+/* main content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1e3d2f;
+  font-family: Playfair Display, 'Times New Roman', serif;
+  font-weight:600
+}
+
+h2 {
+  color: #1e3d2f;
+  font-family: Playfair Display, 'Times New Roman', serif;
+  font-weight: 600;
+  border-bottom: 2px solid #d99a2b;
+  padding-bottom: 4px;
+}
+
+h3 {
+  color: #1e3d2f;
+  font-family: Playfair Display, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+/* banner photo shown near the top of each page */
+.page-banner {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #1e3d2f;
+}
+
+.img-credit {
+  font-size: 12px;
+  color: #666666;
+  font-style: italic;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+/* risk labels used on the black spot map page */
+.risk-high {
+  color: #8a2e2e;
+  font-weight: bold;
+}
+
+.risk-medium {
+  color: #9c6b1a;
+  font-weight: bold;
+}
+
+/* the details/summary "pop up" boxes */
+details.spot {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+details.spot summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.map-frame {
+  width: 100%;
+  height: 400px;
+  border: 2px solid #1e3d2f;
+  margin-bottom: 20px;
+}
+
+/* form styling for the report an incident page */
+form {
+  border: 1px solid #cccccc;
+  padding: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #1e3d2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8a2e2e;
+}
+
+/* table for the contacts page */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+table caption {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1e3d2f;
+  color: white;
+}
+
+/* footer at the bottom of every page */
+footer {
+  background-color: #1e3d2f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+/* Caution Tape Animation */
+.tape {
+  overflow: hidden;
+  white-space: nowrap;
+  background: repeating-linear-gradient(      /* <-- THIS is the stripes */
+    45deg,
+    #f4c430 0px, #f4c430 22px,
+    #111111 22px, #111111 44px
+  );
+  padding: 6px 0;
+  border-top: 2px solid #111111;
+  border-bottom: 2px solid #111111;
+}
+
+.tape-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: tape-scroll 18s linear infinite;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: rgb(234, 13, 13);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+@keyframes tape-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+

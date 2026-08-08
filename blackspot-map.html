@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Spot Map | Uganda Road Accident Black Spot Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-title">Uganda Road Accident Black Spot Map</div>
+      <div class="site-tagline">
+        Know the risky roads before you travel them
+      </div>
+    </header>
+    <div class="tape">
+      <div class="tape-text">
+        CAUTION &nbsp;&bull;&nbsp; ROAD SAFETY &nbsp;&bull;&nbsp; DRIVE
+        CAREFULLY &nbsp;&bull;&nbsp; REPORT HAZARDS &nbsp;&bull;&nbsp; CAUTION
+        &nbsp;&bull;&nbsp; ROAD SAFETY &nbsp;&bull;&nbsp; DRIVE CAREFULLY
+        &nbsp;&bull;&nbsp; REPORT HAZARDS &nbsp;&bull;&nbsp;
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blackspot-map.html" class="active">Black Spot Map</a></li>
+        <li><a href="causes-safety.html">Causes &amp; Safety Advice</a></li>
+        <li><a href="report-incident.html">Report an Incident</a></li>
+        <li><a href="contacts.html">Emergency Contacts</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Black Spot Map</h1>
+
+      <img
+        class="page-banner"
+        src="images/accident.jpeg"
+        alt="A road warning sign on a rural road"
+      />
+      <p class="img-credit">Photo: Wikimedia Commons</p>
+
+      <p>
+        The map below shows Uganda so you can picture the general area of each
+        black spot listed further down the page. In a real deployment each black
+        spot would be plotted as its own pin on the map; because this coursework
+        version has no map API key, we use an embedded Google Map of Uganda
+        together with a details list below it, which is the "Black Spot Details"
+        pop-up content the brief asked for.
+      </p>
+
+      <!-- An iframe simply shows another web page (Google Maps, in this
+         case) inside our own page. This is what makes the map
+         interactive -- visitors can zoom and drag it. -->
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps?q=Uganda&output=embed"
+        title="Map of Uganda"
+        loading="lazy"
+      >
+      </iframe>
+
+      <h2>Known Black Spots</h2>
+      <p>
+        Click on a location below to open its details (this uses the HTML
+        <code>&lt;details&gt;</code> tag, so no JavaScript is needed).
+      </p>
+
+      <!-- Each details block below is one "pop-up". Clicking the
+         summary line expands it to reveal more information,
+         and clicking it again closes it. -->
+
+      <details class="spot">
+        <summary>
+          Kampala Northern Bypass <span class="risk-high">High Risk</span>
+        </summary>
+        <p><strong>Location:</strong> Northern Bypass, Kampala</p>
+        <p>
+          <strong>Past incidents:</strong> Routinely reported as one of
+          Kampala's most dangerous stretches, with frequent collisions involving
+          speeding vehicles, motorcycles (boda bodas), and pedestrians crossing
+          outside marked crossings.
+        </p>
+        <p>
+          <strong>Notes:</strong> High traffic speed combined with limited
+          pedestrian crossing points.
+        </p>
+      </details>
+
+      <details class="spot">
+        <summary>
+          Kapchorwa District Road <span class="risk-high">High Risk</span>
+        </summary>
+        <p><strong>Location:</strong> Kapchorwa District</p>
+        <p>
+          <strong>Past incidents:</strong> Site of a serious school bus accident
+          in July 2026, which resulted in multiple fatalities and injuries among
+          school children.
+        </p>
+        <p>
+          <strong>Notes:</strong> Hilly terrain and sharp bends; extra caution
+          is advised for buses and heavy vehicles.
+        </p>
+      </details>
+
+      <details class="spot">
+        <summary>
+          Northern Uganda Highway <span class="risk-high">High Risk</span>
+        </summary>
+        <p><strong>Location:</strong> Highway route, Northern Uganda</p>
+        <p>
+          <strong>Past incidents:</strong> A bus-truck collision on this route
+          resulted in multiple deaths, highlighting the dangers of long-distance
+          highway travel at night or at high speed.
+        </p>
+        <p>
+          <strong>Notes:</strong> Poor lighting and long straight sections that
+          encourage overspeeding.
+        </p>
+      </details>
+
+      <details class="spot">
+        <summary>
+          Jinja Road Junction, Kampala
+          <span class="risk-medium">Medium Risk</span>
+        </summary>
+        <p><strong>Location:</strong> Jinja Road, Kampala</p>
+        <p>
+          <strong>Past incidents:</strong> Frequent minor collisions at peak
+          hours due to heavy congestion and lane-cutting.
+        </p>
+        <p>
+          <strong>Notes:</strong> Congestion-related risk rather than high-speed
+          risk.
+        </p>
+      </details>
+
+      <p>
+        <em
+          >Note: this is sample coursework data used to demonstrate how the page
+          works. A live version of the site would let traffic police or the
+          public add new verified black spots through the Report an Incident
+          page.</em
+        >
+      </p>
+    </main>
+
+    <footer>
+      <p>Group C Project &mdash; Internet Technology &amp; Web Design</p>
+      <p>Road Accident Black Spot Map &copy; 2026</p>
+    </footer>
+  </body>
+</html>

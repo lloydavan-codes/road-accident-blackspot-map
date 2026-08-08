@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report an Incident | Uganda Road Accident Black Spot Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-title">Uganda Road Accident Black Spot Map</div>
+      <div class="site-tagline">
+        Know the risky roads before you travel them
+      </div>
+    </header>
+    <div class="tape">
+      <div class="tape-text">
+        CAUTION &nbsp;&bull;&nbsp; ROAD SAFETY &nbsp;&bull;&nbsp; DRIVE
+        CAREFULLY &nbsp;&bull;&nbsp; REPORT HAZARDS &nbsp;&bull;&nbsp; CAUTION
+        &nbsp;&bull;&nbsp; ROAD SAFETY &nbsp;&bull;&nbsp; DRIVE CAREFULLY
+        &nbsp;&bull;&nbsp; REPORT HAZARDS &nbsp;&bull;&nbsp;
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blackspot-map.html">Black Spot Map</a></li>
+        <li><a href="causes-safety.html">Causes &amp; Safety Advice</a></li>
+        <li>
+          <a href="report-incident.html" class="active">Report an Incident</a>
+        </li>
+        <li><a href="contacts.html">Emergency Contacts</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Report an Incident</h1>
+
+      <p>
+        Use this form to tell us about a new accident or road hazard. Reports
+        help other drivers, pedestrians, and schools avoid the same danger.
+      </p>
+
+      <!-- Contact Form -->
+      <form action="#" method="post">
+        <label for="location">Location of the incident</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          placeholder="e.g. Northern Bypass, Kampala"
+          required
+        />
+
+        <label for="date">Date of the incident</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="severity">Severity</label>
+        <select id="severity" name="severity" required>
+          <option value="">-- Select severity --</option>
+          <option value="low">Low (near-miss / hazard only)</option>
+          <option value="medium">Medium (minor injury / damage)</option>
+          <option value="high">High (serious injury / fatality)</option>
+        </select>
+
+        <label for="description">Describe what happened</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="5"
+          placeholder="Briefly describe the incident..."
+          required
+        ></textarea>
+
+        <label for="reporter-name">Your name (optional)</label>
+        <input type="text" id="reporter-name" name="reporter-name" />
+
+        <label for="reporter-email"
+          >Your email (optional, in case we need more detail)</label
+        >
+        <input
+          type="email"
+          id="reporter-email"
+          name="reporter-email"
+          placeholder="okello@example.com"
+        />
+
+        <button type="submit">Submit Report</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Group C Project &mdash; Internet Technology &amp; Web Design</p>
+      <p>Road Accident Black Spot Map &copy; 2026</p>
+    </footer>
+  </body>
+</html>
