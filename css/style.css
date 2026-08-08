@@ -232,7 +232,7 @@ footer {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 2px 10px;
 }
-/* Logo Row */
+/* Logo Row in the Header */
 .logo-row {
     display: flex;
     justify-content: center;
