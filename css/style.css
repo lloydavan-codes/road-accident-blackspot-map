@@ -199,7 +199,7 @@ footer {
   margin-top: 20px;
   font-size: 13px;
 }
-/* Caution Tape Animation */
+/* Caution Tape Animation */  
 .tape {
   overflow: hidden;
   white-space: nowrap;
@@ -246,4 +246,16 @@ footer {
   object-fit: contain;   /* makes sure nothing gets stretched or squeezed */
   background-color: white;
   padding: 4px;
+}
+
+@media (max-width: 700px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 12px 16px;
+  }
 }
